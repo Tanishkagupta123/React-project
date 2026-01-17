@@ -1,7 +1,7 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './Component/Routing.jsx'
+import App from './Pages/Signup'
 import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
