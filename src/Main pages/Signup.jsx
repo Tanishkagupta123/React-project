@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import '../Main pages/Signup.css'
+import Galaxy from '../lib/Galaxy';
 
 const Signup = () => {
     const [form, setForm] = useState({
@@ -89,8 +91,12 @@ const Signup = () => {
 
     return (
         <>
+ <div style={{ width: '100%', height: '600px', position: 'relative' ,background: 'black'}}>
+        <Galaxy />
+</div>
+
        
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 ">
             <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
                 <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Signup Form</h1>
 
@@ -143,8 +149,20 @@ const Signup = () => {
             </div>
 
         </div>
-        </>
+
+        
+        {/* new css */}
+
+        {/* // Basic usage */}
+
+
+
+
+ </>
+        
     )
 }
 
 export default Signup;
+
+
