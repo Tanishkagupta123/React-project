@@ -108,7 +108,7 @@ const Signup = () => {
             if (alreadyuser){
 
                 alert("Already User Exits")
-                navigate('/login')
+    
                 return
             }
 
@@ -117,6 +117,8 @@ const Signup = () => {
             localStorage.setItem("user",JSON.stringify(user))
 
             alert("Signup succesfully")
+            navigate('/login')
+
 
           
 
