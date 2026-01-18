@@ -8,6 +8,9 @@ import Movies from '../Pages/Movies'
 import Stores from '../Pages/Stores'
 import Play from '../Pages/Play'
 import Activites from '../Pages/Activites'
+import Signup from '../Main pages/Signup'
+import Login from '../Main pages/Login'
+
 
 const Routing = () => {
   return (
@@ -26,8 +29,11 @@ const Routing = () => {
             <Route path='play' element={<Play/>}/>
 
 
-
         </Route>
+
+        <Route path='signup' element={<Signup/>}/>
+        <Route path='login' element={<Login/>}/>
+
 
     </Routes>
     

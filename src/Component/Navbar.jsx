@@ -23,6 +23,9 @@ const Navbar = () => {
                 <li><Link to="/activites">Activites</Link></li>
                 <li><Link to="/play">Play</Link></li>
 
+                <li><Link to="/signup">Signup/</Link></li>
+                <li><Link to="/login">Login</Link></li>
+
 
             </ul>
 

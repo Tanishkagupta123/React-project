@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import '../Main pages/Signup.css'
 import Galaxy from '../lib/Galaxy';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+
+    let navigate = useNavigate()
+    
     const [form, setForm] = useState({
         firstname: "",
         lastname: "",
@@ -43,7 +47,7 @@ const Signup = () => {
             valid = false;
         }
         
-        else if (form.contact.trim() === "") {
+        else if (form.contact.trim() === ""){
             setError("Please enter contact")
             valid = false;
         }
@@ -77,7 +81,7 @@ const Signup = () => {
         }
 
         if (valid) {
-            alert("Form submitted successfully")
+           
           
             setForm({
                 firstname: "",
@@ -87,7 +91,39 @@ const Signup = () => {
                 password: "",
                 cpassword: ""
             })
-         }}
+         }
+
+         if (valid){
+
+            let user=JSON.parse( localStorage.getItem('user')) || []
+
+            let alreadyuser= user.find( (e)=>{
+
+
+
+                return e.email === form.email
+            })
+
+
+            if (alreadyuser){
+
+                alert("Already User Exits")
+                navigate('/login')
+                return
+            }
+
+            user.push(form)
+            
+            localStorage.setItem("user",JSON.stringify(user))
+
+            alert("Signup succesfully")
+
+          
+
+         }
+         
+        
+        }
 
     return (
         <>
@@ -96,8 +132,11 @@ const Signup = () => {
 </div>
 
        
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4 ">
-            <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+        <div className="min-h-screen flex items-center justify-center p-4 
+     bg-white/10 backdrop-blur-xl">
+
+            <div className="bg-white/20 backdrop-blur-lg border border-white/30 p-8 rounded-2xl shadow-2xl w-full max-w-md">
+
                 <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Signup Form</h1>
 
                 {error && <p className="bg-red-100 text-red-700 p-2 rounded mb-4 text-center">{error}</p>}
