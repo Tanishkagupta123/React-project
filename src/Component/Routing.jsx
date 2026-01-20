@@ -25,7 +25,7 @@ const Routing = () => {
             <Route path='movies' element={<Movies/>}/>
             <Route path='events' element={<Events/>}/>
             <Route path='stores' element={<Stores/>}/>
-            <Route path='activites' element={<Activites/>} />
+            <Route path='activities' element={<Activites/>} />
             <Route path='play' element={<Play/>}/>
 
 

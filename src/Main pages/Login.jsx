@@ -12,7 +12,6 @@ const Login = () => {
     e.preventDefault()
 
     let user = JSON.parse(localStorage.getItem("user")) || []
-
     let exituser = user.find((e) => e.email === email)
 
     if (!exituser) {
@@ -30,89 +29,104 @@ const Login = () => {
   }
 
   return (
+    <div
+      className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center relative"
+      style={{ backgroundImage: "url('newmovie.webp')" }}
+    >
 
-   <div
-  className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
-  style={{ backgroundImage: "url('newmovie.webp')" }}
->
+      <div className="absolute inset-0 bg-white/25 backdrop-blur-[2px]"></div>
 
-  <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+      <div className="flex w-full max-w-4xl bg-white/90 shadow-xl rounded-3xl overflow-hidden relative z-10">
 
+        {/* LEFT — LOGIN */}
+        <div className="w-1/2 flex justify-center items-center p-6">
+          <div className="w-full max-w-md p-8
+            bg-white rounded-2xl
+            border border-sky-100 shadow-lg">
 
-  <div className="relative z-10 w-full max-w-md bg-white rounded-2xl
-    border border-gray-200 p-10
-    transition-transform duration-300 hover:-translate-y-1
-    hover:shadow-xl">
+            <h2 className="text-3xl font-bold text-center text-black mb-2">
+              Login
+            </h2>
 
-    <h2 className="text-3xl font-semibold text-gray-800 mb-2 text-center">
-      Login
-    </h2>
-    <p className="text-sm text-gray-500 mb-8 text-center">
-      Welcome back, please enter your details
-    </p>
+            <p className="text-sm text-black text-center mb-6">
+              Welcome back, please login to your account
+            </p>
 
-    <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5">
 
-      <div>
-        <label className="block text-sm font-medium text-gray-600 mb-1">
-          Email
-        </label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setemail(e.target.value)}
-          placeholder="you@example.com"
-          className="w-full px-4 py-3 rounded-xl
-            bg-[#F9FAFB] border border-gray-300
-            transition-all duration-200
-            focus:outline-none focus:border-sky-400
-            focus:ring-2 focus:ring-sky-200"
-        />
+              <div>
+                <label className="block text-sm font-medium text-gray-600 mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setemail(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-xl
+                    focus:outline-none focus:ring-2 focus:ring-sky-300"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-600 mb-1">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setpassword(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-xl
+                    focus:outline-none focus:ring-2 focus:ring-sky-300"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-sky-400 text-white
+                  font-semibold py-2 rounded-xl
+                  hover:bg-sky-500 transition">
+                Login
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+        {/* RIGHT — WELCOME */}
+        <div className="w-1/2 relative flex flex-col justify-center items-center p-8">
+
+          <div className="absolute inset-0 bg-gradient-to-br
+            from-sky-200 via-sky-300 to-blue-300
+            opacity-70 rounded-3xl">
+          </div>
+
+          <div className="relative z-10 w-full h-full
+            bg-white/40 backdrop-blur-lg
+            border border-white/50 rounded-3xl
+            shadow-lg flex flex-col justify-center items-center p-8">
+
+            <h2 className="text-3xl font-bold mb-4 text-black">
+              Hello, Friend!
+            </h2>
+
+            <p className="text-sm md:text-base mb-6 text-center text-black">
+              Don’t have an account yet?  
+              Create one and start your journey with us.
+            </p>
+
+            <button
+              onClick={() => navigate('/signup')}
+              className="px-6 py-2 rounded-full
+                bg-sky-400 text-white font-semibold
+                hover:bg-sky-500 transition">
+              Sign Up
+            </button>
+
+          </div>
+        </div>
+
       </div>
-
-      <div>
-        <label className="block text-sm font-medium text-gray-600 mb-1">
-          Password
-        </label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setpassword(e.target.value)}
-          placeholder="••••••••"
-          className="w-full px-4 py-3 rounded-xl
-            bg-[#F9FAFB] border border-gray-300
-            transition-all duration-200
-            focus:outline-none focus:border-sky-400
-            focus:ring-2 focus:ring-sky-200"
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-sky-500 text-white py-3 rounded-xl
-          font-medium transition-all duration-300
-          hover:bg-sky-600 hover:shadow-md
-          active:scale-[0.98]">
-        Login
-      </button>
-
-    </form>
-
-    <p className="text-sm text-gray-500 text-center mt-8">
-      Don’t have an account?{" "}
-      <span
-        onClick={() => navigate('/signup')}
-        className="text-sky-500 font-medium cursor-pointer
-          transition hover:text-sky-600 hover:underline" >
-        Sign up
-      </span>
-    </p>
-
-  </div>
-
-</div>
-
-
+    </div>
   )
 }
 

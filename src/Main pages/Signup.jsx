@@ -135,7 +135,7 @@ const Signup = () => {
   className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center relative"
   style={{ backgroundImage: "url('movie.webp')" }} >
 
-  <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
+<div className="absolute inset-0 bg-white/15 backdrop-blur-[3px]"></div>
 
   <div className="flex w-full max-w-4xl bg-white bg-opacity-80 shadow-2xl rounded-3xl overflow-hidden relative z-10">
     
