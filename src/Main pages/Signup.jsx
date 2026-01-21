@@ -135,7 +135,7 @@ const Signup = () => {
   className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center relative"
   style={{ backgroundImage: "url('movie.webp')" }} >
 
-<div className="absolute inset-0 bg-white/15 backdrop-blur-[3px]"></div>
+<div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
 
   <div className="flex w-full max-w-4xl bg-white bg-opacity-80 shadow-2xl rounded-3xl overflow-hidden relative z-10">
     
@@ -262,7 +262,7 @@ const Signup = () => {
 
           <button 
             type="submit" 
-            className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold py-2 rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all text-sm"
+            className="w-full bg-gradient-to-r from-indigo-700 to-purple-500 text-white font-semibold py-2 rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all text-sm"
           >
             Sign Up
           </button>

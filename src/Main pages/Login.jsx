@@ -34,7 +34,7 @@ const Login = () => {
       style={{ backgroundImage: "url('newmovie.webp')" }}
     >
 
-      <div className="absolute inset-0 bg-white/25 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
 
       <div className="flex w-full max-w-4xl bg-white/90 shadow-xl rounded-3xl overflow-hidden relative z-10">
 

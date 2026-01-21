@@ -19,6 +19,8 @@ const Routing = () => {
     <Routes>
         <Route path="/" element={<Navbar/>}>
 
+        <Route index element={<Movies/>}/>
+
 
             <Route path='foryou' element={<Foryou/>}/>
             <Route path='dining' element={<Dining/>}/>
