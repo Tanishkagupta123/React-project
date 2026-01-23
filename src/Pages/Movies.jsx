@@ -140,7 +140,7 @@ const Home = () => {
  {/* MOVIE 6 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/kgf2.jpg" alt="Dunki" className="max-h-full object-contain" />
+    <img src="/dunki.webp" alt="Dunki" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Dunki</h3>
@@ -151,7 +151,7 @@ const Home = () => {
 {/* MOVIE 7 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/rrr.jpg" alt="Fighter" className="max-h-full object-contain" />
+    <img src="/fighter.avif" alt="Fighter" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Fighter</h3>
@@ -162,7 +162,7 @@ const Home = () => {
 {/* MOVIE 8 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/pathaan.jpg" alt="Leo" className="max-h-full object-contain" />
+    <img src="/leo.webp" alt="Leo" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Leo</h3>
@@ -173,7 +173,7 @@ const Home = () => {
 {/* MOVIE 9 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/jawan.jpg" alt="Kalki 2898 AD" className="max-h-full object-contain" />
+    <img src="/kalki.webp" alt="Kalki 2898 AD" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Kalki 2898 AD</h3>
@@ -184,7 +184,7 @@ const Home = () => {
 {/* MOVIE 10 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/bahubali2.jpg" alt="Brahmastra" className="max-h-full object-contain" />
+    <img src="/bramstra.jpg" alt="Brahmastra" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Brahmastra</h3>
@@ -192,10 +192,10 @@ const Home = () => {
   </div>
 </div>
 
-{/* MOVIE 6 */}
+{/* MOVIE 11 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/kgf2.jpg" alt="KGF Chapter 2" className="max-h-full object-contain" />
+    <img src="/kgf.jpg" alt="KGF Chapter 2" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">KGF Chapter 2</h3>
@@ -203,10 +203,10 @@ const Home = () => {
   </div>
 </div>
 
-{/* MOVIE 7 */}
+{/* MOVIE 12 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/rrr.jpg" alt="RRR" className="max-h-full object-contain" />
+    <img src="/rrr.webp" alt="RRR" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">RRR</h3>
@@ -214,10 +214,10 @@ const Home = () => {
   </div>
 </div>
 
-{/* MOVIE 8 */}
+{/* MOVIE 13 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/pathaan.jpg" alt="Pathaan" className="max-h-full object-contain" />
+    <img src="/pathan.jpg" alt="Pathaan" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Pathaan</h3>
@@ -225,7 +225,7 @@ const Home = () => {
   </div>
 </div>
 
-{/* MOVIE 9 */}
+{/* MOVIE 14 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
     <img src="/jawan.jpg" alt="Jawan" className="max-h-full object-contain" />
@@ -236,10 +236,10 @@ const Home = () => {
   </div>
 </div>
 
-{/* MOVIE 10 */}
+{/* MOVIE 15 */}
 <div className="bg-white rounded-xl shadow hover:shadow-lg transition">
   <div className="h-100 bg-gray-100 flex items-center justify-center rounded-t-xl">
-    <img src="/bahubali2.jpg" alt="Baahubali 2" className="max-h-full object-contain" />
+    <img src="/bahubali 2.jpg" alt="Baahubali 2" className="max-h-full object-contain" />
   </div>
   <div className="p-3">
     <h3 className="font-semibold text-gray-900">Baahubali 2</h3>
