@@ -26,6 +26,7 @@ const Login = () => {
     }
 
     alert("Login Successfully")
+     navigate('/movies')
   }
 
   return (
