@@ -118,7 +118,7 @@ const Events = () => {
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <div className="relative">
                 <img
-                  src="/event2.jpg"
+                  src="/zakir khan.webp"
                   alt="Event"
                   className="w-full h-60 object-cover"
                 />
@@ -137,7 +137,7 @@ const Events = () => {
             {/* CARD 3 */}
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <img
-                src="/event3.jpg"
+                src="/sanam.jpg"
                 alt="Event"
                 className="w-full h-60 object-cover"
               />
@@ -150,7 +150,7 @@ const Events = () => {
             {/* CARD 4 */}
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <img
-                src="/event4.jpg"
+                src="/harsh.jpg"
                 alt="Event"
                 className="w-full h-60 object-cover"
               />
@@ -163,7 +163,7 @@ const Events = () => {
             {/* CARD 5 */}
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <img
-                src="/event5.jpg"
+                src="/kidss.jpg"
                 alt="Event"
                 className="w-full h-60 object-cover"
               />
@@ -176,7 +176,7 @@ const Events = () => {
             {/* CARD 6 */}
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <img
-                src="/event6.jpg"
+                src="/workshop.avif"
                 alt="Event"
                 className="w-full h-60 object-cover"
               />
