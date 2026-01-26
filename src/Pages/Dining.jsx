@@ -1,9 +1,84 @@
-import React from 'react'
+import React from "react";
 
 const Dining = () => {
   return (
-    <div>Dining</div>
-  )
-}
+    <div className="w-full min-h-screen bg-purple-50 py-10">
 
-export default Dining
+      {/* Heading */}
+      <h1 className="text-4xl font-bold text-center">
+        Discover Amazing Dining Deals 🍽️
+      </h1>
+
+      <div className="w-40 h-1 bg-purple-500 mx-auto mt-3 rounded-full"></div>
+
+      {/* 3 Boxes */}
+      <div className="max-w-6xl mx-auto px-4 mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        {/* Box 1 */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">Special Meal Combos</h2>
+          <p className="text-gray-600 mt-2">
+            Best food combos from top restaurants near you
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <div className="bg-purple-200 p-3 shadow-lg -rotate-6">
+              <img
+                src="/meals.webp"
+                alt="Dining 1"
+                className="w-56 h-55 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Box 2 */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">Instant Table Booking</h2>
+          <p className="text-gray-600 mt-2">
+            Reserve your seat quickly without waiting in line
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <div className="bg-purple-200 p-3 shadow-lg rotate-3">
+              <img
+                src="/faimly.avif"
+                alt="Dining 2"
+                className="w-56 h-55 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Box 3 */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">Free Dessert Offers</h2>
+          <p className="text-gray-600 mt-2">
+            Get sweet treats and extra discounts with your order
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <div className="bg-purple-200 p-3 shadow-lg -rotate-2">
+              <img
+                src="/desert.jpg"
+                alt="Dining 3"
+                className="w-56 h-50 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Bottom text */}
+      <h2 className="text-3xl font-bold text-center mt-14">
+        Grab Your Food Offers & Save More 💜
+      </h2>
+
+      <div className="w-40 h-1 bg-purple-500 mx-auto mt-3 rounded-full"></div>
+
+    </div>
+  );
+};
+
+export default Dining;
