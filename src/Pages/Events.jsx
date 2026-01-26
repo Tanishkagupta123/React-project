@@ -94,6 +94,7 @@ const Events = () => {
 
           {/* EVENT CARDS */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+
             {/* CARD 1 */}
             <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
               <div className="relative">
@@ -120,7 +121,7 @@ const Events = () => {
                 <img
                   src="/zakir khan.webp"
                   alt="Event"
-                  className="w-full h-60 object-cover"
+                  className="w-full h-75 object-cover"
                 />
                 <span className="absolute top-3 right-3 bg-pink-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
                   PROMOTED
@@ -139,7 +140,7 @@ const Events = () => {
               <img
                 src="/sanam.jpg"
                 alt="Event"
-                className="w-full h-60 object-cover"
+                className="w-full h-75 object-cover"
               />
               <div className="p-3">
                 <h3 className="font-semibold text-gray-900">Sanam Live Concert</h3>
@@ -152,7 +153,7 @@ const Events = () => {
               <img
                 src="/harsh.jpg"
                 alt="Event"
-                className="w-full h-60 object-cover"
+                className="w-full h-75 object-cover"
               />
               <div className="p-3">
                 <h3 className="font-semibold text-gray-900">Harsh Gujral Live</h3>
@@ -165,7 +166,7 @@ const Events = () => {
               <img
                 src="/kidss.jpg"
                 alt="Event"
-                className="w-full h-60 object-cover"
+                className="w-full h-75 object-cover"
               />
               <div className="p-3">
                 <h3 className="font-semibold text-gray-900">Kids Fun Carnival</h3>
@@ -178,7 +179,7 @@ const Events = () => {
               <img
                 src="/workshop.avif"
                 alt="Event"
-                className="w-full h-60 object-cover"
+                className="w-full h-75 object-cover"
               />
               <div className="p-3">
                 <h3 className="font-semibold text-gray-900">
@@ -187,6 +188,110 @@ const Events = () => {
                 <p className="text-sm text-gray-600 mt-1">Sun, 18 Feb</p>
               </div>
             </div>
+
+            {/* neww */}
+
+            {/* CARD 1 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <div className="relative">
+    <img
+      src="/lough.webp"
+      alt="Event"
+      className="w-full h-75 object-cover"
+    />
+    <span className="absolute top-3 right-3 bg-pink-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+      PROMOTED
+    </span>
+  </div>
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Comedy Nights - Laugh Riot Show
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Fri, 20 Mar</p>
+  </div>
+</div>
+
+{/* CARD 2 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <div className="relative">
+    <img
+      src="/open.jpg"
+      alt="Event"
+      className="w-full h-75 object-cover"
+    />
+    <span className="absolute top-3 right-3 bg-pink-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+      PROMOTED
+    </span>
+  </div>
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Open Mic Night - Standup & Poetry
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Sat, 24 Jan onwards</p>
+  </div>
+</div>
+
+{/* CARD 3 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <img
+    src="/bollywood.webp"
+    alt="Event"
+    className="w-full h-75 object-cover"
+  />
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Bollywood Beats - Live Music Night
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Sun, 25 Jan</p>
+  </div>
+</div>
+
+{/* CARD 4 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <img
+    src="/drama.webp"
+    alt="Event"
+    className="w-full h-75 object-cover"
+  />
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Drama Theatre - Stage Performance
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Mon, 2 Feb</p>
+  </div>
+</div>
+
+{/* CARD 5 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <img
+    src="/food.webp"
+    alt="Event"
+    className="w-full h-75 object-cover"
+  />
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Food Fest & Fun Carnival
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Sat, 10 Feb</p>
+  </div>
+</div>
+
+{/* CARD 6 */}
+<div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+  <img
+    src="/photo.jpg"
+    alt="Event"
+    className="w-full h-75 object-cover"
+  />
+  <div className="p-3">
+    <h3 className="font-semibold text-gray-900">
+      Photography Workshop - Beginner Level
+    </h3>
+    <p className="text-sm text-gray-600 mt-1">Sun, 18 Feb</p>
+  </div>
+</div>
+
+
           </div>
         </div>
       </div>
