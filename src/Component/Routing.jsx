@@ -10,6 +10,8 @@ import Play from '../Pages/Play'
 import Activites from '../Pages/Activites'
 import Signup from '../Main pages/Signup'
 import Login from '../Main pages/Login'
+import Bookticket from "../Pages/Bookticket";
+
 
 
 const Routing = () => {
@@ -29,6 +31,8 @@ const Routing = () => {
             <Route path='stores' element={<Stores/>}/>
             <Route path='activities' element={<Activites/>} />
             <Route path='play' element={<Play/>}/>
+            <Route path="book/:movieName" element={<Bookticket />} />
+
 
 
         </Route>
