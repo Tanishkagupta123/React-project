@@ -1,5 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -28,6 +34,124 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      {/* newww */}
+
+<Swiper
+  modules={[Autoplay, Pagination]}
+  slidesPerView={1}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  pagination={{ type: "progressbar" }}
+>
+  {/* SLIDE 1 */}
+  <SwiperSlide>
+    <div className="bg-gradient-to-r from-white to-gray-100 py-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        
+        <div>
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+            Dhurandhar
+          </h1>
+
+          <p className="text-lg text-gray-500 mb-2">
+            UA13+ • Action • Drama
+          </p>
+
+          <p className="text-gray-600 max-w-md mb-8">
+            Power, politics aur badla – ek dhamakedaar kahani jo screen hila degi.
+          </p>
+
+          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+            hover:bg-gray-800 hover:scale-105 transition">
+            Book Now 🎟️
+          </button>
+        </div>
+
+        <div className="flex justify-end">
+          <img
+            src="/dhunadar.webp"
+            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
+          />
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+
+  {/* SLIDE 2 */}
+  <SwiperSlide>
+    <div className="bg-gradient-to-r from-white to-gray-100 py-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        
+        <div>
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+            Animal
+          </h1>
+
+          <p className="text-lg text-gray-500 mb-2">
+            A • Action • Thriller
+          </p>
+
+          <p className="text-gray-600 max-w-md mb-8">
+            Ek junooni beta aur uska dark transformation – intense aur raw.
+          </p>
+
+          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+            hover:bg-gray-800 hover:scale-105 transition">
+            Book Now 🎟️
+          </button>
+        </div>
+
+        <div className="flex justify-end">
+          <img
+            src="/animal.jpeg"
+            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
+          />
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+
+  {/* SLIDE 3 */}
+  <SwiperSlide>
+    <div className="bg-gradient-to-r from-white to-gray-100 py-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        
+        <div>
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+            Salaar
+          </h1>
+
+          <p className="text-lg text-gray-500 mb-2">
+            UA • Action • Crime
+          </p>
+
+          <p className="text-gray-600 max-w-md mb-8">
+            Ek violent duniya, ek powerful hero – mass action entertainer.
+          </p>
+
+          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+            hover:bg-gray-800 hover:scale-105 transition">
+            Book Now 🎟️
+          </button>
+        </div>
+
+        <div className="flex justify-end">
+          <img
+            src="/salaar.jpeg"
+            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
+          />
+        </div>
+      </div>
+    </div>
+  </SwiperSlide>
+</Swiper>
+
+
+    {/* newww */}
+
 
       {/* MOVIES */}
       <div className="max-w-7xl mx-auto px-6 py-12">
