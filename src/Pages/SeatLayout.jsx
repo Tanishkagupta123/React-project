@@ -83,7 +83,6 @@ const CinemaSeats = () => {
 
           <Seat name="N16" /><Seat name="N17" /><Seat name="N18" />
 
-
         </div>
 
         <p className="text-center text-gray-400 mt-4">

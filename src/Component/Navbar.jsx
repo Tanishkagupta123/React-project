@@ -8,17 +8,30 @@ const Navbar = () => {
      <div className='w-full h-20 border-b bg-white shadow-sm'>
   <header className="w-full h-full">
     <nav className="w-full h-full flex items-center px-6">
-      
-      {/* LEFT LOGO */}
-      <div className="flex-shrink-0">
-        <Link
-          to="/"
-          className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent
-          hover:scale-110 transition-transform duration-300"
-        >
-          CINEORA
-        </Link>
-      </div>
+      <div className="flex-shrink-0 flex items-center">
+  <div className="w-18 h-18 rounded-full overflow-hidden 
+                  flex items-center justify-center
+                  bg-gradient-to-r from-purple-500 to-pink-500">
+    <img
+      src="/flip.png"
+      alt="Flickster Logo"
+      className="w-full h-full object-cover scale-105 
+                 hover:scale-140 transition-transform duration-300"
+    />
+  </div>
+
+  <Link
+    to="/"
+    className="ml-3 text-3xl font-extrabold
+               bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500
+               bg-clip-text text-transparent
+               hover:scale-105 transition-transform duration-300"
+  >
+    Flickster
+  </Link>
+</div>
+
+
 
       <ul className="flex-1 flex justify-center gap-6 items-center text-xl font-medium text-gray-700">
         <li className="hover:text-indigo-600 transition">
