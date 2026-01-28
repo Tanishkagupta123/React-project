@@ -60,9 +60,9 @@ const Home = () => {
             UA13+ • Action • Drama
           </p>
 
-          <p className="text-gray-600 max-w-md mb-8">
+          {/* <p className="text-gray-600 max-w-md mb-8">
             Power, politics aur badla – ek dhamakedaar kahani jo screen hila degi.
-          </p>
+          </p> */}
 
           <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
             hover:bg-gray-800 hover:scale-105 transition">
@@ -93,10 +93,10 @@ const Home = () => {
           <p className="text-lg text-gray-500 mb-2">
             A • Action • Thriller
           </p>
-
+{/* 
           <p className="text-gray-600 max-w-md mb-8">
             Ek junooni beta aur uska dark transformation – intense aur raw.
-          </p>
+          </p> */}
 
           <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
             hover:bg-gray-800 hover:scale-105 transition">
@@ -128,9 +128,9 @@ const Home = () => {
             UA • Action • Crime
           </p>
 
-          <p className="text-gray-600 max-w-md mb-8">
+          {/* <p className="text-gray-600 max-w-md mb-8">
             Ek violent duniya, ek powerful hero – mass action entertainer.
-          </p>
+          </p> */}
 
           <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
             hover:bg-gray-800 hover:scale-105 transition">
