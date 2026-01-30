@@ -10,8 +10,9 @@ import Play from '../Pages/Play'
 import Activites from '../Pages/Activites'
 import Signup from '../Main pages/Signup'
 import Login from '../Main pages/Login'
-import Bookticket from "../Pages/Bookticket";
- import SeatLayout from "../Pages/SeatLayout";
+import Bookticket from "../Pages/Bookticket"
+ import SeatLayout from "../Pages/SeatLayout"
+import MyBookings from '../Pages/Mybookings'
 
 
 
@@ -36,6 +37,8 @@ const Routing = () => {
             <Route path='play' element={<Play/>}/>
             <Route path="book/:movieName" element={<Bookticket />} />
             <Route path="/seats/:movieName/:time" element={<SeatLayout />} />
+            <Route path="/mybookings" element={<MyBookings/>} />
+
 
 
 

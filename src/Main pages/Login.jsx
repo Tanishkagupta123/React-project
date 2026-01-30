@@ -1,32 +1,43 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../Main pages/Login.css'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   let navigate = useNavigate()
 
-  let [email, setemail] = useState("")
-  let [password, setpassword] = useState("")
+  let [email, setEmail] = useState("")
+  let [password, setPassword] = useState("")
+
+  // ✅ If already logged in, redirect to dashboard
+  useEffect(() => {
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'))
+    if (loggedInUser) {
+      navigate('/dashboard')
+    }
+  }, [navigate])
 
   let handleSubmit = (e) => {
     e.preventDefault()
 
-    let user = JSON.parse(localStorage.getItem("user")) || []
-    let exituser = user.find((e) => e.email === email)
+    let users = JSON.parse(localStorage.getItem("user")) || []
+    let existingUser = users.find(u => u.email === email)
 
-    if (!exituser) {
+    if (!existingUser) {
       alert("Please Signup first")
       navigate('/signup')
       return
     }
 
-    if (password !== exituser.password) {
+    if (password !== existingUser.password) {
       alert("Invalid password")
       return
     }
 
+    // ✅ Set loggedInUser in localStorage
+    localStorage.setItem("loggedInUser", JSON.stringify({ firstname: existingUser.firstname, email: existingUser.email }))
+
     alert("Login Successfully")
-     navigate('/movies')
+    navigate('/Movies') // ✅ redirect to dashboard
   }
 
   return (
@@ -34,7 +45,6 @@ const Login = () => {
       className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center relative"
       style={{ backgroundImage: "url('newmovie.webp')" }}
     >
-
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
 
       <div className="flex w-full max-w-4xl bg-white/90 shadow-xl rounded-3xl overflow-hidden relative z-10">
@@ -62,7 +72,7 @@ const Login = () => {
                 <input
                   type="email"
                   value={email}
-                  onChange={(e) => setemail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-2 border border-gray-300 rounded-xl
                     focus:outline-none focus:ring-2 focus:ring-sky-300"
                 />
@@ -75,7 +85,7 @@ const Login = () => {
                 <input
                   type="password"
                   value={password}
-                  onChange={(e) => setpassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="w-full px-4 py-2 border border-gray-300 rounded-xl
                     focus:outline-none focus:ring-2 focus:ring-sky-300"
                 />

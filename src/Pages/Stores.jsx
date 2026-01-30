@@ -10,7 +10,6 @@ const Stores = () => {
     { name: "Beauty", image: "/beauty.jpg" },
   ];
 
-  // Products (har category me 5-6 items)
   const products = [
     // Apparel
     { name: "Lehenga Set", category: "Apparel", image: "/lehnga.jpg" },

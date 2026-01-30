@@ -14,7 +14,7 @@ const Home = () => {
     <div className="w-full min-h-screen bg-gray-100">
       {/* HERO SECTION */}
       <div
-        className="w-full h-[55vh] flex items-center justify-center relative bg-cover bg-center"
+        className="w-full h-[80vh] flex items-center justify-center relative bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba')",
@@ -29,9 +29,9 @@ const Home = () => {
           <p className="text-lg text-gray-200 mb-6">
             Book tickets for the latest movies easily & quickly
           </p>
-          <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-lg text-lg font-semibold">
+          {/* <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-lg text-lg font-semibold">
             Book Tickets
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -51,7 +51,8 @@ const Home = () => {
     <div className="bg-gradient-to-r from-white to-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         
-        <div>
+        <div className="md:pl-10 pl-4">
+
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Dhurandhar
           </h1>
@@ -59,10 +60,6 @@ const Home = () => {
           <p className="text-lg text-gray-500 mb-2">
             UA13+ • Action • Drama
           </p>
-
-          {/* <p className="text-gray-600 max-w-md mb-8">
-            Power, politics aur badla – ek dhamakedaar kahani jo screen hila degi.
-          </p> */}
 
           <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
             hover:bg-gray-800 hover:scale-105 transition">
@@ -73,80 +70,77 @@ const Home = () => {
         <div className="flex justify-end">
           <img
             src="/dhunadar.webp"
-            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
+            className="w-[380px] rounded-2xl shadow-2xl hover:scale-105 transition"
           />
         </div>
       </div>
     </div>
   </SwiperSlide>
 
-  {/* SLIDE 2 */}
-  <SwiperSlide>
-    <div className="bg-gradient-to-r from-white to-gray-100 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        
-        <div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
-            Animal
-          </h1>
+ {/* SLIDE 2 */}
+<SwiperSlide>
+  <div className="bg-gradient-to-r from-white to-gray-100 py-20">
+    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      
+      {/* LEFT CONTENT */}
+      <div className="md:pl-12 pl-4">
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+          Baahubali 2
+        </h1>
 
-          <p className="text-lg text-gray-500 mb-2">
-            A • Action • Thriller
-          </p>
-{/* 
-          <p className="text-gray-600 max-w-md mb-8">
-            Ek junooni beta aur uska dark transformation – intense aur raw.
-          </p> */}
+        <p className="text-lg text-gray-500 mb-2">
+        Action • Epic • Dramar
+        </p>
 
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
-            hover:bg-gray-800 hover:scale-105 transition">
-            Book Now 🎟️
-          </button>
-        </div>
+        <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+          hover:bg-gray-800 hover:scale-105 transition">
+          Book Now 🎟️
+        </button>
+      </div>
 
-        <div className="flex justify-end">
-          <img
-            src="/animal.jpeg"
-            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
-          />
-        </div>
+      {/* RIGHT IMAGE */}
+      <div className="flex justify-end">
+        <img
+          src="/bahubali 2.jpg"
+          className="w-[340px] rounded-2xl shadow-2xl hover:scale-105 transition"
+        />
       </div>
     </div>
-  </SwiperSlide>
+  </div>
+</SwiperSlide>
 
-  {/* SLIDE 3 */}
-  <SwiperSlide>
-    <div className="bg-gradient-to-r from-white to-gray-100 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        
-        <div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
-            Salaar
-          </h1>
+{/* SLIDE 3 */}
+<SwiperSlide>
+  <div className="bg-gradient-to-r from-white to-gray-100 py-20">
+    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      
+      {/* LEFT CONTENT */}
+      <div className="md:pl-12 pl-4">
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+          Brahmastra
+        </h1>
 
-          <p className="text-lg text-gray-500 mb-2">
-            UA • Action • Crime
-          </p>
+        <p className="text-lg text-gray-500 mb-2">
+         Fantasy • Adventure • Action
+        </p>
 
-          {/* <p className="text-gray-600 max-w-md mb-8">
-            Ek violent duniya, ek powerful hero – mass action entertainer.
-          </p> */}
+        <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+          hover:bg-gray-800 hover:scale-105 transition">
+          Book Now 🎟️
+        </button>
+      </div>
 
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
-            hover:bg-gray-800 hover:scale-105 transition">
-            Book Now 🎟️
-          </button>
-        </div>
-
-        <div className="flex justify-end">
-          <img
-            src="/salaar.jpeg"
-            className="w-[400px] rounded-2xl shadow-2xl hover:scale-105 transition"
-          />
-        </div>
+      {/* RIGHT IMAGE */}
+      <div className="flex justify-end">
+        <img
+          src="/bramstra.jpg"
+          className="w-[380px] rounded-2xl shadow-2xl hover:scale-105 transition"
+        />
       </div>
     </div>
-  </SwiperSlide>
+  </div>
+</SwiperSlide>
+
 </Swiper>
 
 
