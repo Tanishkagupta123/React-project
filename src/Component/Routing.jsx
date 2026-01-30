@@ -28,13 +28,13 @@ const Routing = () => {
         <Route index element={<Movies/>}/>
 
 
-            <Route path='foryou' element={<Foryou/>}/>
+            {/* <Route path='foryou' element={<Foryou/>}/> */}
             <Route path='dining' element={<Dining/>}/>
             <Route path='movies' element={<Movies/>}/>
             <Route path='events' element={<Events/>}/>
             <Route path='stores' element={<Stores/>}/>
-            <Route path='activities' element={<Activites/>} />
-            <Route path='play' element={<Play/>}/>
+            {/* <Route path='activities' element={<Activites/>} /> */}
+            {/* <Route path='play' element={<Play/>}/> */}
             <Route path="book/:movieName" element={<Bookticket />} />
             <Route path="/seats/:movieName/:time" element={<SeatLayout />} />
             <Route path="/mybookings" element={<MyBookings/>} />

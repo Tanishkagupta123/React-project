@@ -51,7 +51,7 @@ const CinemaSeats = ({ movie, cinema, time }) => {
     });
     localStorage.setItem("bookings", JSON.stringify(bookings));
 
-    alert(`Successfully booked ${selected.length} seat(s) for ${movie}`);
+    alert(`Successfully booked ${selected.length} seat`);
     navigate("/mybookings");
   };
 

@@ -43,13 +43,13 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <ul className="flex-1 flex justify-center gap-6 items-center text-xl font-medium text-gray-700">
-              <li className="hover:text-indigo-600 transition"><Link to="/foryou">For you</Link></li>
+              {/* <li className="hover:text-indigo-600 transition"><Link to="/foryou">For you</Link></li> */}
               <li className="hover:text-indigo-600 transition"><Link to="/dining">Dining</Link></li>
               <li className="hover:text-indigo-600 transition"><Link to="/movies">Movies</Link></li>
               <li className="hover:text-indigo-600 transition"><Link to="/events">Events</Link></li>
               <li className="hover:text-indigo-600 transition"><Link to="/stores">Stores</Link></li>
-              <li className="hover:text-indigo-600 transition"><Link to="/activities">Activities</Link></li>
-              <li className="hover:text-indigo-600 transition"><Link to="/play">Play</Link></li>
+              {/* <li className="hover:text-indigo-600 transition"><Link to="/activities">Activities</Link></li> */}
+              {/* <li className="hover:text-indigo-600 transition"><Link to="/play">Play</Link></li> */}
             </ul>
 
             {/* Right Buttons */}

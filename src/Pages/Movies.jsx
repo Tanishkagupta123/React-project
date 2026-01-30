@@ -55,16 +55,16 @@ const Home = () => {
 
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Dhurandhar
-          </h1>
+          </h1> <br />
 
           <p className="text-lg text-gray-500 mb-2">
             UA13+ • Action • Drama
           </p>
 
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+          {/* <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
             hover:bg-gray-800 hover:scale-105 transition">
             Book Now 🎟️
-          </button>
+          </button> */}
         </div>
 
         <div className="flex justify-end">
@@ -86,16 +86,16 @@ const Home = () => {
       <div className="md:pl-12 pl-4">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Baahubali 2
-        </h1>
+        </h1> <br />
 
         <p className="text-lg text-gray-500 mb-2">
         Action • Epic • Dramar
         </p>
 
-        <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+        {/* <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
           hover:bg-gray-800 hover:scale-105 transition">
           Book Now 🎟️
-        </button>
+        </button> */}
       </div>
 
       {/* RIGHT IMAGE */}
@@ -118,16 +118,16 @@ const Home = () => {
       <div className="md:pl-12 pl-4">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Brahmastra
-        </h1>
+        </h1> <br />
 
         <p className="text-lg text-gray-500 mb-2">
          Fantasy • Adventure • Action
         </p>
 
-        <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
+        {/* <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold
           hover:bg-gray-800 hover:scale-105 transition">
           Book Now 🎟️
-        </button>
+        </button> */}
       </div>
 
       {/* RIGHT IMAGE */}
@@ -308,12 +308,67 @@ const Home = () => {
 
         </div>
       </div>
+{/* FOOTER */}
+<div className="bg-[#0f0f0f] text-gray-300 mt-20">
+  
+  {/* TOP */}
+  <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-      {/* FOOTER */}
-      <div className="bg-gray-900 text-gray-300 text-center py-6">
-        © 2026 MovieBook • Fast • Easy • Secure Ticket Booking
-      </div>
+    {/* BRAND */}
+    <div>
+      <h2 className="text-3xl font-bold text-white mb-3">Flickster</h2>
+      <p className="text-sm text-gray-400 leading-relaxed">
+        Your one-stop destination for movies, events and unforgettable
+        experiences. Book tickets fast, safe & hassle-free 🎬🍿
+      </p>
     </div>
+
+    {/* QUICK LINKS */}
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-4">Explore</h3>
+      <ul className="space-y-3 text-sm">
+        <li className="hover:text-white cursor-pointer">Movies</li>
+        <li className="hover:text-white cursor-pointer">Events</li>
+        <li className="hover:text-white cursor-pointer">Activities</li>
+        <li className="hover:text-white cursor-pointer">Offers</li>
+      </ul>
+    </div>
+
+    {/* SUPPORT */}
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
+      <ul className="space-y-3 text-sm">
+        <li className="hover:text-white cursor-pointer">About Us</li>
+        <li className="hover:text-white cursor-pointer">Contact Us</li>
+        <li className="hover:text-white cursor-pointer">Terms & Conditions</li>
+        <li className="hover:text-white cursor-pointer">Privacy Policy</li>
+      </ul>
+    </div>
+
+  </div>
+
+  {/* DIVIDER */}
+  <div className="border-t border-gray-700"></div>
+
+  {/* BOTTOM */}
+  <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+    <p>
+      © 2026 <span className="text-white font-medium">Flekster</span>.  
+      All rights reserved.
+    </p>
+
+    <p className="text-gray-500">
+      Made with ❤️ for movie lovers
+    </p>
+  </div>
+
+</div>
+
+
+      
+    </div>
+
+
   );
 };
 
