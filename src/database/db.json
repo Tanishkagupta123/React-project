@@ -1,3 +1,15 @@
 {
-  "bookings": []
+  "bookings": [
+    {
+      "id": "48f2",
+      "userEmail": "tanishkagupta241@gmail.com",
+      "time": "01-45 PM",
+      "seats": [
+        "P18",
+        "P10",
+        "V3"
+      ],
+      "total": 900
+    }
+  ]
 }
