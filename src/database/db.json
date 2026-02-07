@@ -10,6 +10,30 @@
         "V3"
       ],
       "total": 900
+    },
+    {
+      "id": "ab21",
+      "userEmail": "tanishkagupta241@gmail.com",
+      "movie": "Leo",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "07:15 PM",
+      "seats": [
+        "N9",
+        "N10"
+      ],
+      "total": 300
+    },
+    {
+      "id": "d449",
+      "userEmail": "shilpi12@gmail.com",
+      "movie": "Brahmastra",
+      "cinema": "Cinepolis DB Mall",
+      "time": "10:05 AM",
+      "seats": [
+        "P18",
+        "V3"
+      ],
+      "total": 650
     }
   ]
 }
