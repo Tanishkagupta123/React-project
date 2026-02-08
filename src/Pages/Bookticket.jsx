@@ -32,8 +32,10 @@ const BookTicket = () => {
               <button
                 key={idx}
                 onClick={() =>
-                  navigate(`/seats/${movieName}/${time.replace(":", "-")}`)
+                 navigate(`/seats/${movieName}/${cinema.name}/${time}`)
+
                 }
+
                 className="border px-4 py-2 rounded hover:bg-gray-200 transition"
               >
                 {time}

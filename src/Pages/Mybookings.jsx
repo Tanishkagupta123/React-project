@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const MyBookings = () => {
   const navigate = useNavigate();
+  const [myBookings, setMyBookings] = useState([]);
 
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
@@ -14,12 +15,38 @@ const MyBookings = () => {
     );
   }
 
-  const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+  useEffect(() => {
+    fetch("http://localhost:3001/bookings")
+      .then((res) => res.json())
+      .then((data) => {
+        const userBookings = data.filter(
+          (b) => b.userEmail === loggedInUser.email
+        );
+        setMyBookings(userBookings);
+      });
+  }, []);
 
-  // 🔥 ONLY LOGGED-IN USER BOOKINGS
-  const myBookings = bookings.filter(
-    (b) => b.userEmail === loggedInUser.email
-  );
+  const cancelBooking = (id) => {
+    if (!window.confirm("Are you sure you want to cancel this ticket?")) {
+      return;
+    }
+
+    fetch(`http://localhost:3001/bookings/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Delete failed");
+        }
+    
+        setMyBookings((prev) => prev.filter((b) => b.id !== id));
+        alert("Ticket cancelled successfully");
+      })
+      .catch(() => {
+        alert("Error cancelling ticket");
+      });
+  };
+
 
   if (myBookings.length === 0) {
     return <p className="text-center mt-10">No bookings yet</p>;
@@ -31,14 +58,12 @@ const MyBookings = () => {
         My Bookings
       </h1>
 
-      {myBookings.map((b, i) => (
+      {myBookings.map((b) => (
         <div
-          key={i}
+          key={b.id}
           className="bg-white p-4 rounded shadow mb-4"
         >
-          <h2 className="font-semibold text-lg">
-            {b.movie}
-          </h2>
+          <h2 className="font-semibold text-lg">{b.movie}</h2>
           <p>{b.cinema}</p>
           <p>{b.time}</p>
           <p>
@@ -47,6 +72,14 @@ const MyBookings = () => {
           <p className="font-semibold">
             Total Paid: ₹{b.total}
           </p>
+
+          <button
+            onClick={() => cancelBooking(b.id)}
+            className="mt-2 bg-red-600 text-white px-4 py-1 rounded"
+          >
+            Cancel Ticket
+          </button>
+
         </div>
       ))}
     </div>

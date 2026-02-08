@@ -34,6 +34,32 @@
         "V3"
       ],
       "total": 650
+    },
+    {
+      "id": "70f9",
+      "userEmail": "tanishka12@gmail.com",
+      "movie": "Pathaan",
+      "cinema": "PVR Bhopal City Mall",
+      "time": "04:50 PM",
+      "seats": [
+        "V2",
+        "P17",
+        "P9"
+      ],
+      "total": 900
+    },
+    {
+      "id": "d109",
+      "userEmail": "tanishka12@gmail.com",
+      "movie": "Dhurandhar",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "11:00 AM",
+      "seats": [
+        "P26",
+        "P18",
+        "P10"
+      ],
+      "total": 750
     }
   ]
 }
