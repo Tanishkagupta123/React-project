@@ -60,6 +60,77 @@
         "P10"
       ],
       "total": 750
+    },
+    {
+      "id": "71bc",
+      "userEmail": "rashi12@gmail.com",
+      "movie": "Brahmastra",
+      "cinema": "Cinepolis DB Mall",
+      "time": "06:25 PM",
+      "seats": [
+        "P1",
+        "V1"
+      ],
+      "total": 650
+    },
+    {
+      "id": "3748",
+      "userEmail": "tanishka33@gmail.com",
+      "movie": "Leo",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "07:15 PM",
+      "seats": [
+        "P9",
+        "P17",
+        "V3"
+      ],
+      "total": 900
+    },
+    {
+      "id": "0fb8",
+      "userEmail": "tanishka33@gmail.com",
+      "movie": "Leo",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "02:30 PM",
+      "seats": [
+        "P25",
+        "P26",
+        "V3"
+      ],
+      "total": 900
+    },
+    {
+      "id": "9907",
+      "userEmail": "tanishka33@gmail.com",
+      "movie": "RRR",
+      "cinema": "Inox Capital Mall",
+      "time": "01:45 PM",
+      "seats": [
+        "P25",
+        "P17",
+        "P1"
+      ],
+      "total": 750
+    },
+    {
+      "id": "321d",
+      "userEmail": "rashi112@gmail.com",
+      "movie": "Avatar",
+      "cinema": "Inox Capital Mall",
+      "time": "05:45 PM",
+      "seats": [
+        "P1",
+        "P10",
+        "V2",
+        "V4",
+        "V5",
+        "V6",
+        "V7",
+        "V8",
+        "V9",
+        "V10"
+      ],
+      "total": 3700
     }
   ]
 }
