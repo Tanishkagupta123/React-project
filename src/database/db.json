@@ -113,24 +113,108 @@
       "total": 750
     },
     {
-      "id": "321d",
+      "id": "183d",
       "userEmail": "rashi112@gmail.com",
-      "movie": "Avatar",
+      "movie": "Leo",
       "cinema": "Inox Capital Mall",
       "time": "05:45 PM",
       "seats": [
+        "P25",
+        "P26"
+      ],
+      "total": 500
+    },
+    {
+      "id": "ec65",
+      "userEmail": "rashi112@gmail.com",
+      "movie": "Dunki",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "07:15 PM",
+      "seats": [
         "P1",
-        "P10",
-        "V2",
-        "V4",
-        "V5",
-        "V6",
-        "V7",
-        "V8",
-        "V9",
+        "P9",
+        "P17"
+      ],
+      "total": 750
+    },
+    {
+      "id": "6de9",
+      "userEmail": "rashi112@gmail.com",
+      "movie": "Dunki",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "07:15 PM",
+      "seats": [
+        "V1",
+        "P1",
+        "N1"
+      ],
+      "total": 800
+    },
+    {
+      "id": "6adb",
+      "userEmail": "rashi112@gmail.com",
+      "movie": "Animal",
+      "cinema": "Wave Cinemas Arera Hills",
+      "time": "07:15 PM",
+      "seats": [
+        "P25",
+        "P26"
+      ],
+      "total": 500
+    },
+    {
+      "id": "511f",
+      "userEmail": "rashi112@gmail.com",
+      "movie": "RRR",
+      "cinema": "Cinepolis DB Mall",
+      "time": "06:25 PM",
+      "seats": [
+        "P2",
+        "P3",
+        "P15",
         "V10"
       ],
-      "total": 3700
+      "total": 1150
+    },
+    {
+      "id": "d065",
+      "userEmail": "tanishkagupta241@gmail.com",
+      "movie": "Kalki-2898-AD",
+      "cinema": "Cinepolis DB Mall",
+      "time": "01:15 PM",
+      "seats": [
+        "P4",
+        "V5",
+        "V10"
+      ],
+      "total": 1050
+    },
+    {
+      "id": "ff3a",
+      "userEmail": "tanishkagupta241@gmail.com",
+      "movie": "Pathaan",
+      "cinema": "Cinepolis DB Mall",
+      "time": "10:05 AM",
+      "seats": [
+        "P3"
+      ],
+      "total": 250
+    },
+    {
+      "id": "f06d",
+      "userEmail": "tanishkagupta241@gmail.com",
+      "movie": "Animal",
+      "cinema": "Cinepolis DB Mall",
+      "time": "01:15 PM",
+      "seats": [
+        "P2",
+        "V2",
+        "V3",
+        "V4",
+        "V6",
+        "V7"
+      ],
+      "total": 2250
     }
   ]
 }
